@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="card card-header text-center mb-5">
+      Nuevo Producto
+    </div>
+
+    <!-- Product Form -->
+    <form id="productForm" class="container-fluid">
+        <div class="form-group">
+          <input type="text" id="producto" placeholder="Nombre del producto" class="form-control" autofocus>
+        </div>
+        <div class="form-group">
+          <input type="number" id="precio" placeholder="Precio" step="any" class="form-control">
+        </div>
+        <div class="form-group mb-5">
+          <span>(opcional)</span>
+          <textarea id="descripcion" rows="3" placeholder="Alguna descripción del producto" class="form-control"></textarea>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary">
+            Guardar
+          </button>
+    
+          <button type="button" id="cancelar" class="btn btn-secondary ml-5">
+            Cerrar
+          </button>
+        </div>
+    </form>
+
+    <script src="./agregar.js"></script>
+    
+</body>
+</html>
